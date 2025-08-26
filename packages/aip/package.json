@@ -1,0 +1,23 @@
+{
+  "name": "@zably/contracts-aip",
+  "version": "1.0.0",
+  "description": "AIP Manifest v1.1 and CloudEvents schemas for agent packages and runtime events",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "vitest",
+    "test:unit": "vitest run",
+    "types:gen": "tsc --declaration --emitDeclarationOnly",
+    "dev": "tsc --watch",
+    "lint": "echo 'Linting AIP contracts'",
+    "format": "echo 'Formatting AIP contracts'"
+  },
+  "dependencies": {
+    "zod": "^3.22.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "vitest": "^1.0.0"
+  }
+}

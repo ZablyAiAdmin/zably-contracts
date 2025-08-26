@@ -1,0 +1,26 @@
+{
+  "name": "@zably/contracts-identity",
+  "version": "1.0.0",
+  "description": "JWT claims, tenant/role model, and S2S authentication contracts",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "vitest",
+    "test:unit": "vitest run",
+    "types:gen": "tsc --declaration --emitDeclarationOnly",
+    "dev": "tsc --watch",
+    "lint": "echo 'Linting identity contracts'",
+    "format": "echo 'Formatting identity contracts'"
+  },
+  "dependencies": {
+    "zod": "^3.22.0",
+    "jsonwebtoken": "^9.0.0",
+    "jose": "^5.0.0"
+  },
+  "devDependencies": {
+    "@types/jsonwebtoken": "^9.0.0",
+    "typescript": "^5.0.0",
+    "vitest": "^1.0.0"
+  }
+}

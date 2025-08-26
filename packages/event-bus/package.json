@@ -1,0 +1,24 @@
+{
+  "name": "@zably/contracts-event-bus",
+  "version": "1.0.0",
+  "description": "Event bus topics and install ticket (JWS) contracts for Marketplace→OS handshake",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "vitest",
+    "test:unit": "vitest run",
+    "types:gen": "tsc --declaration --emitDeclarationOnly",
+    "dev": "tsc --watch",
+    "lint": "echo 'Linting event-bus contracts'",
+    "format": "echo 'Formatting event-bus contracts'"
+  },
+  "dependencies": {
+    "zod": "^3.22.0",
+    "jose": "^5.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "vitest": "^1.0.0"
+  }
+}

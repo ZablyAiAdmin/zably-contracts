@@ -1,0 +1,34 @@
+{
+  "name": "zably-contracts",
+  "version": "1.0.0",
+  "description": "Shared contracts and schemas for Zably platform",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "pnpm -r build",
+    "test": "pnpm -r test",
+    "test:unit": "pnpm -r test:unit",
+    "test:integration": "pnpm -r test:integration",
+    "test:e2e": "pnpm -r test:e2e",
+    "types:gen": "pnpm -r types:gen",
+    "openapi:emit": "pnpm -r openapi:emit",
+    "dev": "pnpm -r dev",
+    "db:migrate": "echo 'No database migrations for contracts'",
+    "db:seed:min": "echo 'No database seeding for contracts'",
+    "lint": "pnpm -r lint",
+    "format": "pnpm -r format"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0",
+    "vitest": "^1.0.0",
+    "zod": "^3.22.0"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "pnpm": ">=8.0.0"
+  },
+  "packageManager": "pnpm@8.15.0"
+}
